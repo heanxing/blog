@@ -33,13 +33,13 @@
     <div class="breadcrumb">
     <span>文章分类</span>
     <span class="divider">/</span>
-    <span class="active">文章管理</span>
+    <span class="active">分类管理</span>
     </div>
     </div>
 
     <!--全部主体内容-->
         <div class="list-content">
-            <!--块元素-->
+
             <!--块元素-->
             <div class="block">
                 <!--页面有多个表格时，可以用于标识表格-->
@@ -71,8 +71,8 @@
                     <table id="table" class="table color2">
                         <thead>
                         <tr>
-                            <th class="checkbox"><input type="checkbox" class="fill listen-1" /> </th>
-                            <th >序排序</th>
+                            <th  style="width: 20px"class="checkbox"><input type="checkbox" class="fill listen-1" /> </th>
+                            <th style="width: 30%">序排序</th>
                             <th>分类名称</th>
 
 
@@ -81,8 +81,8 @@
                         <tbody>
                         <c:forEach items="${list}" var="entity" varStatus="status">
                             <tr>
-                                <td style="width: 20px" class="checkbox"><input type="checkbox" class="fill listen-1-2"  name="id" value="${entity.id}"/> </td>
-                                <td style="width: 30%"><input type="text" class="text" name="sort" datatype="正整数" onerror-msg="必须输入正整数" value="${entity.sort}" /></td>
+                                <td  class="checkbox"><input type="checkbox" class="fill listen-1-2"  name="id" value="${entity.id}"/> </td>
+                                <td ><input type="text" class="text" name="sort" datatype="正整数" onerror-msg="必须输入正整数" value="${entity.sort}" /></td>
                                 <td><input type="text" class="text" name="name"  onerror-msg="必须输入名称" value="${entity.name}" /></td>
 
                             </tr>
@@ -94,9 +94,7 @@
 
 
                     </table>
-                        <div class="page">
-                            <ul id="page" class="pagination"></ul>
-                        </div>
+
                 </div>
 
             </div>

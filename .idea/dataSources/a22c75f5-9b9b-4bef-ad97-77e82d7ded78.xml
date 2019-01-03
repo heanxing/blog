@@ -28,70 +28,112 @@
     <schema id="22" parent="1" name="world"/>
     <schema id="23" parent="1" name="yidu"/>
     <schema id="24" parent="1" name="myo2o"/>
-    <table id="25" parent="2" name="tb_user"/>
-    <table id="26" parent="2" name="type_info"/>
-    <table id="27" parent="2" name="user_info"/>
-    <column id="28" parent="25" name="user_id">
+    <table id="25" parent="2" name="arcicle_info"/>
+    <table id="26" parent="2" name="tb_user"/>
+    <table id="27" parent="2" name="type_info"/>
+    <table id="28" parent="2" name="user_info"/>
+    <column id="29" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="25" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="25" name="conten">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="25" name="conten_text">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="33" parent="25" name="cover">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="34" parent="25" name="view_count">
+      <Position>6</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <column id="35" parent="25" name="update_time">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="36" parent="25" name="status">
+      <Position>8</Position>
+      <DataType>int(255)|0</DataType>
+    </column>
+    <key id="37" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="26" name="user_id">
       <Position>1</Position>
       <DataType>bigint(20)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="29" parent="25" name="username">
+    <column id="39" parent="26" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="30" parent="25" name="password">
+    <column id="40" parent="26" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="31" parent="25" name="image">
+    <column id="41" parent="26" name="image">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="32" parent="25" name="status">
+    <column id="42" parent="26" name="status">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <key id="33" parent="25" name="PRIMARY">
+    <key id="43" parent="26" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="34" parent="26" name="id">
+    <column id="44" parent="27" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="35" parent="26" name="name">
+    <column id="45" parent="27" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="26" name="sort">
+    <column id="46" parent="27" name="sort">
       <Position>3</Position>
-      <DataType>varchar(255)|0</DataType>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <key id="37" parent="26" name="PRIMARY">
+    <key id="47" parent="27" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="38" parent="27" name="id">
+    <column id="48" parent="28" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="39" parent="27" name="login_name">
+    <column id="49" parent="28" name="login_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="40" parent="27" name="pass_word">
+    <column id="50" parent="28" name="pass_word">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
     </column>
-    <key id="41" parent="27" name="PRIMARY">
+    <key id="51" parent="28" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

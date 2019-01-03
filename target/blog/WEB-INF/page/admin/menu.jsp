@@ -41,7 +41,7 @@
     <li class="menu-item">
         <a href="javascript:;"><span class="icon-magic"></span>文章管理<i class="icon-keyboard_arrow_left"></i></a>
         <ul>
-            <li><a href="javascript:;">文章列表</a></li>
+            <li><a href="${pageContext.request.contextPath}/article/list.action">文章列表</a></li>
             <li><a href="javascript:;">回收站</a></li>
 
         </ul>
